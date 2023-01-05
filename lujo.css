@@ -186,7 +186,9 @@ footer p{
     .ok img {
         margin:.5rem;
     }
-   
+    nav li {
+        font-size:.9rem;
+    }
     header {
         height:18rem;
         position: relative;

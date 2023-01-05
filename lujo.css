@@ -1,0 +1,234 @@
+html {
+    font-size:16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.f {
+    background-color:bisque;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding:1.75rem 0;
+    max-height: 2rem;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+nav li{
+    display: inline-block;
+    margin:0 .5rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .5px;
+    -webkit-text-stroke-color: black;
+}
+nav .logo{
+
+    margin:0 auto;
+}
+nav img {
+    border-radius: 50%;
+    height:3.125rem;
+    border: 1px solid black;
+    position: relative;
+   
+}
+nav .span{
+    position: relative;
+    color:white;
+    font-size:1.25rem;
+    text-transform: uppercase;
+    margin:0 auto;
+    padding:0.5rem;
+    border:1px solid black;
+    border-radius:5px;
+    background-color: yellowgreen;
+    
+
+}
+.span:hover{
+    background-color: greenyellow;
+    color:aliceblue;
+}
+.span:active{
+    background-color: rgb(0, 153, 0);
+}
+nav ul{
+    margin:0 20rem;
+}
+button{
+    padding:.2rem;
+    border:none;
+    background-color: white;
+}
+button:hover{
+    border:1px solid black;
+    border-radius:0.3125rem ;
+}
+button:active{
+    background-color: rgb(175, 175, 175);
+}
+header {
+    display: flex;
+    background-image: url(./background.png);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    width:100%;
+    height:50rem;
+    background-position: center;
+}
+/* main */
+.display {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.products {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top:5rem;
+    margin-bottom: 2rem;
+}
+.container {
+    overflow: hidden;
+    display:block;
+}
+.container div img{
+    border-radius: 5px;
+}
+.ok {
+    line-height: 2;
+}
+.ok img{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.teams {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+}
+.team img{
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+.color {
+    background-color: aliceblue;
+    padding-bottom: 2rem;
+}
+.jk {
+    padding-top: 3rem;
+}
+footer {
+    display: flex;
+    color:white;
+    background-color: rgb(63, 63, 63);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer p{
+    text-align: center;
+    line-height: 2;
+    width: 100%;
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    nav ul{
+        margin:0 9rem;
+        
+    }
+    .display {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+    }
+    header {
+        height:30rem;
+    }
+    
+}
+@media only screen and (max-width:426px){
+    nav ul {
+        margin:0 0rem;
+    }
+    header {
+        display: block;
+        overflow: hidden;
+        height:17rem;
+        position: relative;
+        top:3rem;
+    }
+    .ok img {
+        margin:0rem;
+    }
+    nav li {
+        font-size:1rem;
+    }
+    html {
+        font-size:16px;
+    }
+    .yes img{
+        height:10rem;
+    }
+    nav {
+        margin:0;
+    }
+}
+@media only screen and (max-width:376px),(orientation:portrait){
+    .ok img {
+        margin:.5rem;
+    }
+   
+    header {
+        height:18rem;
+        position: relative;
+        left:0rem;
+    }
+    .yes img{
+        height:10rem;
+    }
+}
+@media only screen and (max-width:321px) {
+    .ok img {
+        margin:0rem;
+    }
+    nav img {
+        display: none;
+    }
+    header {
+        height:13rem;
+        position: relative;
+        top:4rem;
+    }
+    html {
+        float: left;
+    }
+    .yes img{
+        height:10rem;
+    }
+    html {
+        font-size: 14px;
+    }
+    .jk,.kk{
+        font-size: 1.5rem;
+    }
+    .span {
+        display: none;
+        visibility: hidden;
+    }
+    nav {
+        justify-content: center;
+        margin:0;
+    }
+    nav .logo {
+        margin:0;
+    }
+}
